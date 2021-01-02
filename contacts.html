@@ -11,62 +11,87 @@
 <body>
     <!-- Шапка -->
     <header>
-        <a href="index.html">Главная</a>
-        <a href="contacts.html">Контакты</a>
+        <div class="container">
+            <div class="menu">
+                <a href="index.html">Главная</a>
+                <a href="contacts.html">Контакты</a>
+            </div>
+        </div>
     </header>
 
     <!-- Основной текст -->
-    <h2>Contact Us</h2>
+    <div class="container-fluid">
+        <h2 class="heading2">Contact Us</h2>
 
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, placeat.</p>
-    <img src="img/contact.png" alt="contact logo">
+        <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, placeat.</p>
+    </div>
 
-    <h4>Address</h4>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+    <div class="container">
+        <div class="blocks2">
+            <div class="block-1-2">
+                <img src="img/contact.png" alt="contact logo">
 
-    <h4>Phone</h4>
-    <ul>
-        <li>+7 (123) 456-78-90</li>
-        <li>+7 (999) 123-45-67</li>
-    </ul>
+                <h4 class="heading4">Address</h4>
+                <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
 
-    <h4>Online service</h4>
-    <ul>
-        <li>
-            <a href="https://supercompany.com" target="_blank">supercompany.com</a>
-        </li>
-        <li>
-            <a href="mailto:mail@mail.ru">mail@mail.ru</a>
-        </li>
-    </ul>
+                <h4 class="heading4">Phone</h4>
+                <ul>
+                    <li>+7 (123) 456-78-90</li>
+                    <li>+7 (999) 123-45-67</li>
+                </ul>
 
-    <h4>Send us message</h4>
-    <p>
-    <form class="message-form" action="#">
-        Full name: <input type="text"><br>
-        E-mail: <input type="email"><br>
-        Message: <textarea rows="5"></textarea><br>
-        <button type="submit">Send</button> <button type="reset">Clear</button>
-    </form>
-    </p>
+                <h4 class="heading4">Online service</h4>
+                <ul>
+                    <li>
+                        <a href="https://supercompany.com" target="_blank">supercompany.com</a>
+                    </li>
+                    <li>
+                        <a href="mailto:mail@mail.ru">mail@mail.ru</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="block-1-2">
+                <h4 class="heading4">Send us message</h4>
+                <p class="paragraph">
+                <form action="#">
+                    Full name: <input type="text" placeholder="Иван"><br>
+                    E-mail: <input type="email" placeholder="ivan@mail.ru"><br>
+                    Message: <textarea rows="5" placeholder="Текст сообщения..."></textarea><br>
+                    <button class="message-form-button" type="submit">Send</button> <button class="message-form-button"
+                        type="reset">Clear</button>
+                </form>
+                </p>
+            </div>
+        </div>
 
-    <script type="text/javascript" charset="utf-8" async
-        src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A30ed8e80d91a28bf87a9c18cdeceb0783012000400dc44ca2db301a75e3b2704&amp;width=500&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+        <script type="text/javascript" charset="utf-8" async
+            src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A30ed8e80d91a28bf87a9c18cdeceb0783012000400dc44ca2db301a75e3b2704&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
 
-    <h3>Lorem, ipsum dolor.</h3>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit, molestias.</p>
+    </div>
 
     <!-- Подвал -->
     <footer>
+        <div class="container footer-top">
+            <div class="work-with-us">
+                <h3>Lorem ipsum dolor sit amet.</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos quasi recusandae debitis atque
+                    repellat
+                    ut quo laborum culpa dolorum aliquid.</p>
+            </div>
+        </div>
+
         <hr>
-        <ul>
-            <li>Lorem, ipsum dolor sit amet</li>
-            <li>+7 (123) 456-78-90</li>
-            <li>
-                <a href="mailto:mail@mail.ru">mail@mail.ru</a>
-            </li>
-        </ul>
-        <p style="text-align:center;">2020 &copy; Все права защищены</p>
+        <div class="container footer-bottom">
+            <ul>
+                <li>Lorem ipsum dolor sit amet consectetur</li>
+                <li>+7 (123) 456-78-90</li>
+                <li>
+                    <a href="mailto:mail@mail.ru">mail@mail.ru</a>
+                </li>
+            </ul>
+            <p class="copyright">2020 &copy; Все права защищены</p>
+        </div>
     </footer>
+</body>
 
 </html>
