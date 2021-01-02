@@ -4,11 +4,15 @@
 }
 
 body {
-    font-family: sans-serif;
+    font-family: Roboto;
+    font-size: 16px;
+    line-height: 26px;
 }
 
 header {   
-    margin-bottom: 30px;
+    height: 768px;
+    background: linear-gradient(0deg, #EBF3FB 8.84%, rgba(152, 195, 232, 0) 31.12%);
+    padding-top: 40px;
 }
 
 footer {
@@ -65,50 +69,59 @@ input, textarea {
    /* border: blueviolet 3px solid; */
 }
 
-/* .container-fluid {
-    min-width: 320px;
-    width: 100%;
-    margin-left: 0;
-    margin-right: 0;
- 
-    border:orange 3px solid;
- } */
-
 .menu {
     display: flex;
-    justify-content: center;
-    position: sticky;
+    justify-content: space-between;
     top: 0;
-    background-color: lightyellow;
 
     /* border: seagreen 3px solid; */
 }
 
-.menu-item {
-    display: block;
-    padding: 10px 20px;
-    font-weight: bold;
-}
-
-.menu-item:hover {
-    background-color:lightsteelblue;
+.top-box {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 .slogan {
-    min-height: 300px;
-    margin-top: 50px;
-    margin-bottom: 150px;
-    font-size: 2em;
+    padding-top: 115px;
+    flex-grow: 1;
+    background-image: url(img/header-bg.png);
+    background-position: right center;
+    background-repeat: no-repeat;
 
     /* border: rgb(31, 32, 32) 3px solid; */
 }
 
 .slogan-title {
     width: 510px;
+    font-weight: 300;
+    font-size: 64px;
+    line-height: 74px;
+    letter-spacing: 0.04em;
+    color: #1F3F68;
 }
 
 .slogan-text {
+    margin-top: 32px;
     width: 425px;
+    letter-spacing: 0.05em;
+    color: #1F3F68;
+    opacity: 0.6;
+}
+
+.top-button {
+    background: #5A98D0;
+    box-shadow: 5px 10px 20px rgba(53, 110, 173, 0.2);
+    border-radius: 10px;
+
+    padding: 15px 50px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 71px;
 }
 
 .what-we-do {
