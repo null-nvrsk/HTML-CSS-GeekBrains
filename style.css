@@ -1,23 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: sans-serif;
-    margin: 0;
-    box-sizing: border-box;
 }
-
-*,
-*::before,
-*::after {
-    box-sizing: inherit;
-}
-
 
 header {   
     margin-bottom: 30px;
 }
 
-header, footer {
-    border: darkred 3px solid;
+footer {
+    margin-top: 20px;
+    background-color: #316099;
+    color: white;
 }
+
+/* header, footer {
+    border: darkred 3px solid;
+} */
 
 .paragraph, .heading1, h.heading4 {
     color: #1F3F68;
@@ -57,66 +59,79 @@ input, textarea {
 
 .container {
    min-width: 320px;
-   max-width: 1200px;
-   margin-left: auto;
-   margin-right: auto;
+   max-width: 1140px;
+   margin: 0 auto;
 
-   border: blueviolet 3px solid;
+   /* border: blueviolet 3px solid; */
 }
 
-.container-fluid {
+/* .container-fluid {
     min-width: 320px;
     width: 100%;
     margin-left: 0;
     margin-right: 0;
  
     border:orange 3px solid;
- }
+ } */
 
 .menu {
-    height: 40px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    background-color: lightyellow;
 
-    border: seagreen 3px solid;
+    /* border: seagreen 3px solid; */
+}
+
+.menu-item {
+    display: block;
+    padding: 10px 20px;
+    font-weight: bold;
+}
+
+.menu-item:hover {
+    background-color:lightsteelblue;
 }
 
 .slogan {
-    width: 50%;
     min-height: 300px;
-    margin-top: 100px;
-    margin-bottom: 250px;
-
+    margin-top: 50px;
+    margin-bottom: 150px;
     font-size: 2em;
 
-    border: rgb(31, 32, 32) 3px solid;
+    /* border: rgb(31, 32, 32) 3px solid; */
+}
+
+.slogan-title {
+    width: 510px;
+}
+
+.slogan-text {
+    width: 425px;
+}
+
+.what-we-do {
+
 }
 
 .cards-block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
     margin: 15px 0;
     padding: 15px 0;
 
     border: forestgreen 3px solid;
 }
 
-.cards-block::after {
-    display: table;
-    clear: both;
-    content: '';
-}
-
-.col-1-3  {
-    float: left;
-    width: calc((100% - 20px * 2) / 3); 
-    height: 300px;
-    margin-right: 20px;
+.card {   
+    width: 330px;
+    min-height: 200px;
+    margin: 10px;
     padding: 10px;
     
     border: mediumvioletred 3px solid;
-}
-
-.card-1-3:last-child {
-    margin-right: 0;
 }
 
 .our-projects {
@@ -125,27 +140,61 @@ input, textarea {
     border: crimson 3px solid;
 }
 
-.footer-top, .footer-bottom {
+.contact-info {
+    display: flex;
+    justify-content: space-around;
+    height: 30px;
+}
+
+.contact-info li {
+    list-style: none;
+}
+
+.contact-info a {
+    color: white;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    color: #5A98D0;
+    text-decoration: underline;
+}
+
+.footer-top {
     padding-top: 40px;
     padding-bottom: 40px;
 }
 
-.blocks2::after {
-    display: table;
-    clear: both;
-    content: '';
+.footer-bottom {
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+.blocks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .block-1-2 {
-    width: 50%;
-    float: left;
+    width: 500px;
+    min-height: 200px;
+    margin: 10px;
+    padding: 10px;
+
+    border: mediumvioletred 3px solid;
+}
+
+.no-symbol li {
+    list-style: none;
 }
 
 .work-with-us {
-    width: 40%;
-    height: 250px;
+    max-width: 495px;
+    padding-left: 20px;
+    line-height: 1.8em;
 
-    border: lavender 3px solid;
+    /* border: lavender 3px solid; */
 }
 
 .message-form-button {
@@ -163,8 +212,8 @@ input, textarea {
 .copyright {
     margin: 0;
     padding-top: 8px;
-    height: 40px;
+    height: 25px;
     text-align: center;
 
-    border: lavender 3px solid;
+    /* border: lavender 3px solid; */
 }
