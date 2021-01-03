@@ -191,10 +191,58 @@ input, textarea {
 }
 
 .our-projects {
-    margin-top: 10px;
+    margin-top: 64px;
     margin-bottom: 10px;
 
-    border: crimson 3px solid;
+    /* border: crimson 3px solid; */
+}
+
+.project-about {
+    width: 75%;
+    margin: 32px auto 64px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #222222;
+}
+
+.project-parent {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 32px;
+}
+
+.project-item {
+    position: relative;
+    flex-grow: 1;
+}
+
+.project-item-margin {
+    margin-right: 32px;
+}
+
+.project-text {
+    font-size: 32px;
+    line-height: 46px;
+    text-align: right;
+    letter-spacing: 0.05em;
+
+    color: #FFFFFF;
+}
+
+.project-text-pos-right {
+    position: absolute;
+    top: 64px;
+    right: 64px;
+}
+
+.project-text-pos-left {
+    position: absolute;
+    top: 32px;
+    left: 32px;
+}
+
+.project-img {
+width: 100%;
 }
 
 .contact-info {
