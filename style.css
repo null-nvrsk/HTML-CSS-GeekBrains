@@ -39,9 +39,12 @@ footer {
 }
 
 .heading2 {
-    font-weight: 500;
-    font-size: 44px;
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 46px;
     text-align: center;
+    letter-spacing: 0.05em;
+    color: black;
 }
 
 .heading3 {
@@ -125,31 +128,72 @@ input, textarea {
 }
 
 .what-we-do {
-
+    padding-top: 64px;
 }
 
 .cards-block {
     display: flex;
     flex-wrap: wrap;
-    justify-content:center;
-    margin: 15px 0;
-    padding: 15px 0;
+    justify-content: space-between;
+    /* box-sizing: border-box; ??? */
+    margin-top: 64px;
 
-    border: forestgreen 3px solid;
+    /* border: forestgreen 3px solid; */
 }
 
 .card {   
-    width: 330px;
+    display: flex;
+    flex-direction: column;
+
+    width: 358px;
     min-height: 200px;
-    margin: 10px;
-    padding: 10px;
-    
-    border: mediumvioletred 3px solid;
+    margin-right: 32px;
+    padding: 44px 32px;
+    box-sizing: border-box;
+
+    background: #FFFFFF;
+    box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+    border-radius: 10px;
+
+    /* border: mediumvioletred 3px solid; */
+}
+
+.card:last-child {
+    margin-right: 0;
+}
+
+.card-img {
+    align-self: center;
+    margin-bottom: 50px;
+}
+
+.card-title {
+    margin-bottom: 14px;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.05em;
+    color: #1F3F68;
+}
+
+.card-text {
+    letter-spacing: 0.05em;
+    color: #1F3F68;
+    opacity: 0.6;
+    padding-bottom: 28px;
+}
+
+.card-more a {
+    font-size: 14px;
+    line-height: 30px;
+    letter-spacing: 0.05em;
+    color: #5A98D0;
+    text-decoration: none;
 }
 
 .our-projects {
     margin-top: 10px;
     margin-bottom: 10px;
+
     border: crimson 3px solid;
 }
 
