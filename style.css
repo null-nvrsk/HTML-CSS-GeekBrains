@@ -16,7 +16,6 @@ header {
 }
 
 footer {
-    margin-top: 20px;
     background-color: #316099;
     color: white;
 }
@@ -135,7 +134,6 @@ input, textarea {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    /* box-sizing: border-box; ??? */
     margin-top: 64px;
 
     /* border: forestgreen 3px solid; */
@@ -192,7 +190,7 @@ input, textarea {
 
 .our-projects {
     margin-top: 64px;
-    margin-bottom: 10px;
+    margin-bottom: 112px;
 
     /* border: crimson 3px solid; */
 }
@@ -248,15 +246,17 @@ width: 100%;
 .contact-info {
     display: flex;
     justify-content: space-around;
-    height: 30px;
+    margin-bottom: 64px;   
 }
 
 .contact-info li {
     list-style: none;
+    flex-grow: 1;
 }
 
 .contact-info a {
     color: white;
+    letter-spacing: 0.05em;
     text-decoration: none;
 }
 
@@ -266,13 +266,12 @@ width: 100%;
 }
 
 .footer-top {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .footer-bottom {
-    padding-top: 30px;
-    padding-bottom: 10px;
+    padding: 64px 0;
 }
 
 .blocks {
@@ -295,11 +294,40 @@ width: 100%;
 }
 
 .work-with-us {
-    max-width: 495px;
-    padding-left: 20px;
-    line-height: 1.8em;
+    margin: 91px 0 96px;
 
     /* border: lavender 3px solid; */
+}
+
+.work-title {
+    width: 340px;
+    font-size: 36px;
+    font-weight: normal;
+    line-height: 46px;
+    letter-spacing: 0.05em;
+}
+
+.work-description {
+    margin-top: 32px;
+    width: 45%;
+    letter-spacing: 0.05em;
+    opacity: 0.6;
+}
+
+.chat-block {
+    display: flex;
+    align-items: center;
+}
+
+.chat-button {
+    display: inline-block;
+    flex-wrap: nowrap;
+    background: #5A98D0;
+    padding: 15px 80px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+    text-decoration: none;
 }
 
 .message-form-button {
@@ -315,10 +343,8 @@ width: 100%;
 }
 
 .copyright {
-    margin: 0;
-    padding-top: 8px;
-    height: 25px;
-    text-align: center;
+    letter-spacing: 0.05em;
+    opacity: 0.4;
 
     /* border: lavender 3px solid; */
 }
