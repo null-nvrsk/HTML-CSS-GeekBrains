@@ -10,7 +10,7 @@ body {
 }
 
 header {   
-    height: 768px;
+    min-height: 768px;
     background: linear-gradient(0deg, #EBF3FB 8.84%, rgba(152, 195, 232, 0) 31.12%);
     padding-top: 40px;
 }
@@ -91,8 +91,7 @@ input, textarea {
     background-image: url(img/header-bg.png);
     background-position: right center;
     background-repeat: no-repeat;
-
-    /* border: rgb(31, 32, 32) 3px solid; */
+    background-size: 50%; 
 }
 
 .slogan-title {
@@ -145,7 +144,7 @@ input, textarea {
 
     width: 358px;
     min-height: 200px;
-    margin-right: 32px;
+    /* margin-right: 32px; */
     padding: 44px 32px;
     box-sizing: border-box;
 
@@ -268,6 +267,8 @@ width: 100%;
 .footer-top {
     display: flex;
     justify-content: space-between;
+    padding: 91px 0 96px;
+    margin: 0 auto;
 }
 
 .footer-bottom {
@@ -294,7 +295,7 @@ width: 100%;
 }
 
 .work-with-us {
-    margin: 91px 0 96px;
+    /* margin: 91px 0 96px; */
 
     /* border: lavender 3px solid; */
 }
@@ -320,11 +321,8 @@ width: 100%;
 }
 
 .chat-button {
-    display: inline-block;
-    flex-wrap: nowrap;
     background: #5A98D0;
     padding: 15px 80px;
-    text-align: center;
     letter-spacing: 0.04em;
     color: #FFFFFF;
     text-decoration: none;
@@ -347,4 +345,211 @@ width: 100%;
     opacity: 0.4;
 
     /* border: lavender 3px solid; */
+}
+
+/* Планшет */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .container {
+        margin: 0 32px;
+    }
+
+    header {
+        padding-top: 32px;
+    }
+
+    .slogan {
+        background-position: right 280px;
+    }
+
+    .cards-block {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        margin-bottom: 32px;
+    }
+
+    .footer-top {  
+        width: 70%;
+        margin: 0 auto;
+        padding: 47px 0 64px;
+    }
+
+    .footer-bottom {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .work-description {
+        width: 340px;
+    }
+
+    .chat-button {
+        padding: 5px 30px;
+    }
+
+    .contact-info {
+        flex-direction: column;
+    }
+
+    .contact-info li {
+        line-height: 26px;
+        margin-bottom: 25px;
+    }
+
+    .contact-info li:last-child {
+        margin-bottom: 0;
+    }
+}
+
+/* Телефон */
+@media (max-width: 767px) {
+    .container {
+        margin: 0 16px;
+    }
+    
+    header {
+        min-height: 376px;
+        padding: 24px 0 40px;
+        box-sizing: border-box;
+    }
+
+    .heading2 {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .slogan {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        padding-top: 32px;
+        background-image: none;       
+    }
+
+    .slogan-title {
+        font-size: 32px;
+        line-height: 38px;    
+        width: 100%;
+        text-align: center;
+    }
+    .slogan-text {
+        width: 100%;
+        margin-top: 12px;
+        text-align: center;
+    }
+
+    .top-button {
+        padding: 0 8px;
+        font-size: 12px;
+        line-height: 26px;
+    }
+
+    .what-we-do {
+        padding-top: 48px;
+    }
+
+    .cards-block {
+        margin-top: 32px;
+    }
+
+    .card {
+        margin-bottom: 32px;
+        width: 100%;
+    }
+
+    .project-about {
+        width: 100%;
+    }
+
+    .heading2 {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .our-projects {
+        margin-bottom: 64px;
+    }
+
+    .project-text {
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    .project-text-pos-right {
+        top: 16px;
+        right: 16px;
+    }
+
+    .project-text-pos-left {
+        top: 16px;
+        left: 16px;
+    }
+
+    .project-parent {
+        flex-direction: column;
+        margin-top: 0;
+    }
+
+    .project-item-margin {
+        margin-right: 0;
+    }
+
+    .footer-top {
+        flex-direction: column;
+        padding: 18px 0 0;
+    }
+
+    /* .work-with-us {
+        margin: 18px 0 0;
+    } */
+
+    .work-title {
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: normal;
+        text-align: center;
+        width: 100%;
+    }
+
+    .work-description {
+        text-align: center;
+        width: 100%;
+    }
+
+    .chat-block {
+        flex-direction: column;
+        text-align: center;
+        margin: 40px auto;
+    }
+
+    .chat-button {
+        padding: 5px 20px;
+    }
+    
+    .footer-bottom {
+        padding: 32px 0;
+    }
+
+    .contact-info {
+        flex-direction: column;
+        align-items: stretch;
+        margin-bottom: 32px;
+    }
+
+    .contact-info li {
+        line-height: 19px;
+        margin-bottom: 18px;
+    }
+
+    .contact-info li:last-child {
+        margin-bottom: 0;
+    }
+
+    .copyright {
+        text-align: center;
+    }
+
 }
