@@ -287,7 +287,7 @@ width: 100%;
     margin: 10px;
     padding: 10px;
 
-    border: mediumvioletred 3px solid;
+    /* border: mediumvioletred 3px solid; */
 }
 
 .no-symbol li {
